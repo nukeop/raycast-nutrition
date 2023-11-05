@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "nutrition",
+  "title": "Nutrition",
+  "description": "An extension showing the nutritional values of food, searchable with natural language queries",
+  "icon": "command-icon.png",
+  "author": "nukeop",
+  "categories": [
+    "Fun"
+  ],
+  "license": "AGPL-3.0",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Show Nutritional Values",
+      "subtitle": "Show the calorie content and nutrition data of food",
+      "description": "Extracts nutrition information from text using natural language processing. Example queries: \"3 eggs\", \"100g brown mushrooms\", \"cup of peanuts\"2",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.61.1",
+    "@raycast/utils": "^1.10.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "18.18.4",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
